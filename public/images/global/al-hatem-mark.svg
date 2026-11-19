@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" width="72" height="72" role="img" aria-label="Al Hatem">
+  <title>Al Hatem</title>
+  <rect x="4" y="4" width="64" height="64" rx="15" fill="#ffdc39"/>
+  <path d="M36 14.5 59 32.6V56a2.5 2.5 0 0 1-2.5 2.5h-41A2.5 2.5 0 0 1 13 56V32.6L36 14.5Z" fill="#000000"/>
+  <path fill="#ffdc39" fill-rule="evenodd" d="M26 35h4.6v6.7h10.8V35H46v21h-4.6v-9.6H30.6V56H26V35Z"/>
+</svg>

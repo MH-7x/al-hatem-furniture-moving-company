@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  trailingSlash: true,
   experimental: {
     agentFeedback: true,
   },
@@ -15,6 +15,7 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  poweredByHeader: false,
 };
 
 export default nextConfig;
