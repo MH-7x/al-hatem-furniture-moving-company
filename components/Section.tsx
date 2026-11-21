@@ -60,7 +60,7 @@ export function SectionHeading({
         action ? "lg:flex-row lg:items-end lg:justify-between" : ""
       } ${className}`.trim()}
     >
-      <div className={center ? "mx-auto max-w-3xl text-center" : "max-w-3xl"}>
+      <div className={center ? "mx-auto max-w-3xl text-center" : "max-w-5xl"}>
         {eyebrow && <p className="eyebrow mb-3">{eyebrow}</p>}
         <h2 id={id}>{title}</h2>
         {intro && <div className="rich mt-4 text-[1.0625rem]">{intro}</div>}

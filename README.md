@@ -16,16 +16,16 @@ Al Hatem Movers is a Dubai-based moving company that helps families and business
 
 ### Services
 
-| Service | What it covers |
-| --- | --- |
-| Home movers and packers | Full household relocation in Dubai |
-| Villa movers | Large household moves in villa communities |
-| Apartment movers | High-rise moves, lift bookings, building rules |
-| Office movers | Workstations, IT equipment, minimal downtime |
-| Furniture movers | Safe handling, dismantling and assembly |
-| Packing and unpacking | Packing materials, labelling, unpacking |
-| Storage solutions | Short- and long-term secure storage |
-| Cargo services | Household goods and commercial shipments |
+| Service                 | What it covers                                 |
+| ----------------------- | ---------------------------------------------- |
+| Home movers and packers | Full household relocation in Dubai             |
+| Villa movers            | Large household moves in villa communities     |
+| Apartment movers        | High-rise moves, lift bookings, building rules |
+| Office movers           | Workstations, IT equipment, minimal downtime   |
+| Furniture movers        | Safe handling, dismantling and assembly        |
+| Packing and unpacking   | Packing materials, labelling, unpacking        |
+| Storage solutions       | Short- and long-term secure storage            |
+| Cargo services          | Household goods and commercial shipments       |
 
 ### Areas served
 
@@ -36,7 +36,7 @@ Al Hatem Movers is a Dubai-based moving company that helps families and business
 
 ## About this website
 
-A fast, mobile-first marketing website built to rank for local moving searches such as *movers and packers in Dubai*, *villa movers in Dubai* and *office movers in Dubai*, and to turn visitors into quote requests.
+A fast, mobile-first marketing website built to rank for local moving searches such as _movers and packers in Dubai_, _villa movers in Dubai_ and _office movers in Dubai_, and to turn visitors into quote requests.
 
 **31 pages:** Home, Services, Areas We Serve, About, Contacts, Privacy Policy, 8 service pages and 18 location pages, plus a custom 404 page.
 
@@ -84,20 +84,20 @@ pnpm dev
 
 ### Environment variables
 
-| Variable | Purpose |
-| --- | --- |
-| `NEXT_PUBLIC_SITE_URL` | The live domain, **without** a trailing slash (e.g. `https://www.yourdomain.com`). Used for canonical URLs, Open Graph URLs, the sitemap and all structured data. |
+| Variable   | Purpose                                                                                                                                                           |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `SITE_URL` | The live domain, **without** a trailing slash (e.g. `https://www.yourdomain.com`). Used for canonical URLs, Open Graph URLs, the sitemap and all structured data. |
 
-> **Important:** set `NEXT_PUBLIC_SITE_URL` in your hosting provider's environment settings before building for production. If it is missing, the site falls back to `http://localhost:3000`.
+> **Important:** set `SITE_URL` in your hosting provider's environment settings before building for production. If it is missing, the site falls back to `http://localhost:3000`.
 
 ### Scripts
 
-| Command | Description |
-| --- | --- |
-| `pnpm dev` | Start the development server |
-| `pnpm build` | Create the production build |
-| `pnpm start` | Serve the production build |
-| `pnpm lint` | Run ESLint |
+| Command      | Description                  |
+| ------------ | ---------------------------- |
+| `pnpm dev`   | Start the development server |
+| `pnpm build` | Create the production build  |
+| `pnpm start` | Serve the production build   |
+| `pnpm lint`  | Run ESLint                   |
 
 ## Project structure
 
@@ -117,7 +117,7 @@ The site is fully static and can be deployed to [Vercel](https://vercel.com) or 
 
 **Before going live:**
 
-1. Set `NEXT_PUBLIC_SITE_URL` to the live domain.
+1. Set `SITE_URL` to the live domain.
 2. Replace the placeholder social links in `lib/constants.ts` with real profile URLs (placeholders are hidden automatically).
 3. Add analytics and verify the site in Google Search Console, then submit `/sitemap.xml`.
 4. Claim and link the Google Business Profile.
