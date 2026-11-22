@@ -1,3 +1,4 @@
+import { ReviewsSection } from "@/components/Blocks";
 import Link from "next/link";
 import { Shell } from "@/components/Shell";
 import { JsonLd } from "@/components/JsonLd";
@@ -498,6 +499,8 @@ export default function AboutPage() {
           </div>
         </div>
       </Section>
+
+      <ReviewsSection id="about-reviews-title" title="What Our Customers Say" />
 
       <FinalCta id="about-final-title" title="Get in Touch With Our Team">
         <p>

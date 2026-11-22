@@ -3,10 +3,10 @@ import { Section, SectionHeading } from "./Section";
 import { CardGrid, ChipList } from "./Cards";
 import { Faqs } from "./Faq";
 import { ProcessStrip } from "./ProcessSteps";
-import { RatingLine, ReviewCard } from "./ReviewCard";
+import { RatingLine } from "./ReviewCard";
+import { ReviewsWidget } from "./ReviewsWidget";
 import { SiteImage } from "./SiteImage";
-import { BUSINESS } from "@/lib/constants";
-import type { ReviewerName } from "@/lib/reviews";
+import { BUSINESS, REVIEW_COUNT } from "@/lib/constants";
 
 type Tone = "white" | "neutral";
 
@@ -121,7 +121,6 @@ export function ReviewsSection({
   eyebrow = "Testimonials",
   intro,
   tone = "white",
-  names,
   subheads,
 }: {
   id: string;
@@ -129,21 +128,16 @@ export function ReviewsSection({
   eyebrow?: string;
   intro?: ReactNode;
   tone?: Tone;
-  names: readonly ReviewerName[];
   subheads?: ReactNode;
 }) {
   return (
     <Section tone={tone} labelledBy={id}>
       <SectionHeading id={id} eyebrow={eyebrow} title={title} intro={intro} />
       {subheads && <div className="mb-10 grid gap-8 md:grid-cols-2">{subheads}</div>}
-      <CardGrid cols={names.length === 2 ? 2 : 3}>
-        {names.map((n) => (
-          <ReviewCard key={n} name={n} />
-        ))}
-      </CardGrid>
+      <ReviewsWidget />
       <div className={`mt-10 rounded-card p-6 lg:p-8 ${tone === "white" ? "bg-neutral" : "bg-white"}`}>
         <RatingLine>
-          Rated 5.0 out of 5 on Google from 25 reviews.{" "}
+          Rated 5.0 out of 5 on Google from {REVIEW_COUNT} reviews.{" "}
           <a
             href={BUSINESS.reviewsHref}
             target="_blank"

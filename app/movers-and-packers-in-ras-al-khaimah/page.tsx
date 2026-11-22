@@ -662,7 +662,6 @@ export default function RasAlKhaimahPage() {
       <ReviewsSection
         id="rak-reviews-title"
         title="What Ras Al Khaimah Customers Say"
-        names={["Zo Barazanji", "Nazeera Banu Nazar"]}
       />
     </LocationLayout>
   );

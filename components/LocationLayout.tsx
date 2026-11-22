@@ -8,6 +8,7 @@ import { SiteImage } from "./SiteImage";
 import { ContactStrip } from "./Article";
 import { Callout, ChipList } from "./Cards";
 import { Faqs } from "./Faq";
+import { ReviewsSection } from "./Blocks";
 import { BUSINESS } from "@/lib/constants";
 
 type Props = {
@@ -23,6 +24,7 @@ type Props = {
   closing?: ReactNode;
   faqNote?: ReactNode;
   after?: ReactNode;
+  reviews?: boolean;
   children: ReactNode;
 };
 
@@ -39,6 +41,7 @@ export function LocationLayout({
   closing,
   faqNote,
   after,
+  reviews,
   children,
 }: Props) {
   const wide = heroImage.ratio === "8:3";
@@ -106,6 +109,10 @@ export function LocationLayout({
       </Section>
 
       {after}
+
+      {reviews && (
+        <ReviewsSection id={`${faqId}-reviews`} title="What Our Customers Say" />
+      )}
 
       <ContactStrip />
       <div className="pb-8" />

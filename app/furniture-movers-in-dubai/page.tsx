@@ -415,7 +415,6 @@ export default function FurnitureMoversPage() {
             </SubHead>
           </>
         }
-        names={["Sharath Devadiga", "Zo Barazanji", "Subha George"]}
       />
 
       <CardsSection

@@ -1,3 +1,4 @@
+import { ReviewsSection } from "@/components/Blocks";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { ArticleSection, ContactStrip } from "@/components/Article";
@@ -140,18 +141,21 @@ export default function AlAinPage() {
         </>
       }
       after={
-        <FinalCta id="al-final-title" title="Get a Free Moving Quote in Al Ain">
-          <p>
-            Planning a moving services al ain? Tell Al Hatem Movers where you’re moving from, where you’re
-            going, what needs to be moved, and whether you need packing, dismantling, storage, or other
-            assistance.
-          </p>
-          <p>
-            For a more accurate quotation, include the property type, approximate number of rooms, larger
-            furniture items, and any access issues such as stairs, lifts, narrow entrances, or restricted
-            parking.
-          </p>
-        </FinalCta>
+        <>
+          <ReviewsSection id="al-reviews-title" title="What Our Customers Say" />
+          <FinalCta id="al-final-title" title="Get a Free Moving Quote in Al Ain">
+            <p>
+              Planning a moving services al ain? Tell Al Hatem Movers where you’re moving from, where you’re
+              going, what needs to be moved, and whether you need packing, dismantling, storage, or other
+              assistance.
+            </p>
+            <p>
+              For a more accurate quotation, include the property type, approximate number of rooms, larger
+              furniture items, and any access issues such as stairs, lifts, narrow entrances, or restricted
+              parking.
+            </p>
+          </FinalCta>
+        </>
       }
     >
       <ArticleSection

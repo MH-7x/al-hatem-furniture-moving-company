@@ -30,15 +30,17 @@ import {
   NumberedItem,
   ServiceCard,
 } from "@/components/Cards";
-import { RatingLine, ReviewCard } from "@/components/ReviewCard";
+import { RatingLine } from "@/components/ReviewCard";
+import { ReviewsWidget } from "@/components/ReviewsWidget";
 import { Faq, FaqList } from "@/components/Faq";
 import { QuoteForm } from "@/components/QuoteForm";
 import { OpenCallBox } from "@/components/CallBox";
 import { ProcessList, Step } from "@/components/ProcessSteps";
 import { MapBlock } from "@/components/MapBlock";
-import { BUSINESS, EMIRATE_LINKS } from "@/lib/constants";
+import { BUSINESS, EMIRATE_LINKS, REVIEW_COUNT } from "@/lib/constants";
 import { buildMetadata } from "@/lib/metadata";
 import { pageSchema } from "@/lib/schema";
+import Script from "next/script";
 
 const TITLE = "Trusted Movers in Dubai | Movers and packers in Dubai";
 const DESCRIPTION =
@@ -566,18 +568,16 @@ export default function HomePage() {
             alt="Movers helping a family move into their new home in Dubai"
             ratio="3:2"
           />
-          <div className="grid gap-5">
-            <ReviewCard name="Youssef Shalaby" />
-            <ReviewCard name="Zo Barazanji" />
-            <ReviewCard name="Sulthan Abdul Kader" />
+          <div className="rounded-card bg-neutral p-6 lg:p-8">
+            <RatingLine>
+              Rated 5.0 out of 5 on Google from {REVIEW_COUNT} reviews, built on consistent
+              service, clear communication, and successful relocations across
+              Dubai.
+            </RatingLine>
           </div>
         </div>
-        <div className="mt-10 rounded-card bg-white p-6 lg:p-8">
-          <RatingLine>
-            Rated 5.0 out of 5 on Google from 25 reviews, built on consistent
-            service, clear communication, and successful relocations across
-            Dubai.
-          </RatingLine>
+        <div className="mt-10">
+          <ReviewsWidget />
         </div>
       </Section>
 

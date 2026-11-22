@@ -97,6 +97,7 @@ export default function DeiraPage() {
         </>
       }
       faqId="deira-faq-title"
+      reviews
       faqTitle="Frequently asked questions about movers and packers in Deira"
       faqs={faqs}
       nearby={

@@ -1,5 +1,4 @@
-import { BUSINESS, SITE_URL } from "./constants";
-import { REVIEWS } from "./reviews";
+import { BUSINESS, REVIEW_COUNT, SITE_URL } from "./constants";
 
 const days = [
   "Monday",
@@ -127,7 +126,7 @@ export function rootSchema() {
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: "5.0",
-          reviewCount: "25",
+          reviewCount: String(REVIEW_COUNT),
           bestRating: "5",
           worstRating: "1",
         },

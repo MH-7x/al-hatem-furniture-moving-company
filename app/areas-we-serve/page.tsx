@@ -5,6 +5,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { Button } from "@/components/Button";
 import { PageHeader } from "@/components/PageHeader";
 import { SiteImage } from "@/components/SiteImage";
+import { ReviewsSection } from "@/components/Blocks";
 import { Section, SectionHeading } from "@/components/Section";
 import { Callout, CardGrid, ChipLink, ChipList, FeatureCard, ServiceCard } from "@/components/Cards";
 import { Faqs } from "@/components/Faq";
@@ -436,6 +437,8 @@ export default function AreasWeServePage() {
           </div>
         </div>
       </Section>
+
+      <ReviewsSection id="areas-reviews-title" title="What Our Customers Say" />
     </Shell>
   );
 }

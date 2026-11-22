@@ -421,7 +421,6 @@ export default function OfficeMoversPage() {
             </SubHead>
           </>
         }
-        names={["Uzair Akhoond", "Ali Al Raeisi", "Youssef Shalaby"]}
       />
 
       <CardsSection

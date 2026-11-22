@@ -1,3 +1,4 @@
+import { ReviewsSection } from "@/components/Blocks";
 import Link from "next/link";
 import { ArticleSection, ContactStrip } from "@/components/Article";
 import { ChipLink } from "@/components/Cards";
@@ -159,6 +160,8 @@ export default function AjmanPage() {
               arrived exactly as it should.
             </p>
           </ArticleSection>
+
+          <ReviewsSection id="aj-reviews-title" title="What Our Customers Say" />
 
           <FinalCta id="aj-final-title" title="Ready to Plan Your Move?">
             <p>

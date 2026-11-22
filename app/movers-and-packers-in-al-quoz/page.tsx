@@ -97,6 +97,7 @@ export default function AlQuozPage() {
         </>
       }
       faqId="quoz-faq-title"
+      reviews
       faqTitle="Frequently asked questions about movers and packers in Al Quoz"
       faqs={faqs}
       nearby={

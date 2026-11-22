@@ -25,12 +25,13 @@ import {
   ImageCard,
   NumberedItem,
 } from "@/components/Cards";
-import { RatingLine, ReviewCard } from "@/components/ReviewCard";
+import { RatingLine } from "@/components/ReviewCard";
+import { ReviewsWidget } from "@/components/ReviewsWidget";
 import { Faqs } from "@/components/Faq";
 import { OpenCallBox } from "@/components/CallBox";
 import { ProcessStrip, StripStep } from "@/components/ProcessSteps";
 import { FinalCta } from "@/components/FinalCta";
-import { BUSINESS } from "@/lib/constants";
+import { BUSINESS, REVIEW_COUNT } from "@/lib/constants";
 import { buildMetadata } from "@/lib/metadata";
 import { pageSchema } from "@/lib/schema";
 
@@ -410,14 +411,10 @@ export default function VillaMoversPage() {
             </p>
           </div>
         </div>
-        <CardGrid cols={3}>
-          <ReviewCard name="Zo Barazanji" />
-          <ReviewCard name="Sharath Devadiga" />
-          <ReviewCard name="Youssef Shalaby" />
-        </CardGrid>
+        <ReviewsWidget />
         <div className="mt-10 rounded-card bg-neutral p-6 lg:p-8">
           <RatingLine>
-            Rated 5.0 out of 5 on Google from 25 reviews.{" "}
+            Rated 5.0 out of 5 on Google from {REVIEW_COUNT} reviews.{" "}
             <a
               href={BUSINESS.reviewsHref}
               target="_blank"

@@ -1,3 +1,4 @@
+import { ReviewsSection } from "@/components/Blocks";
 import Link from "next/link";
 import { Shell } from "@/components/Shell";
 import { JsonLd } from "@/components/JsonLd";
@@ -286,6 +287,8 @@ export default function ServicesPage() {
           </div>
         </div>
       </Section>
+
+      <ReviewsSection id="services-reviews-title" title="What Our Customers Say" />
 
       <FinalCta id="services-final-title" title="Get Your Free Moving Quote Today">
         <p>Looking for reliable movers in Dubai?</p>

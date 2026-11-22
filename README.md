@@ -105,7 +105,7 @@ pnpm dev
 app/            Pages and routes (one folder per page), layout, sitemap, robots
 components/     Shared UI: header, footer, hero, cards, FAQ, quote form, map
 components/hero Hero variants (split, immersive, bold) and breadcrumb
-lib/            Business details, metadata helpers, JSON-LD schema, reviews
+lib/            Business details, metadata helpers, JSON-LD schema
 public/images/  Optimized site images, grouped by page
 ```
 

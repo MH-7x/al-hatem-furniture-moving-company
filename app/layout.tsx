@@ -4,6 +4,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { SITE_URL } from "@/lib/constants";
 import { rootSchema } from "@/lib/schema";
 import "./globals.css";
+import GTM from "@/components/GTM";
 
 const publicSans = Public_Sans({
   variable: "--font-public-sans",
@@ -62,6 +63,7 @@ export default function RootLayout({
       <body>
         <JsonLd data={rootSchema()} />
         {children}
+        <GTM />
       </body>
     </html>
   );

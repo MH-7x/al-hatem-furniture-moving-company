@@ -97,6 +97,7 @@ export default function AlBarshaPage() {
         </>
       }
       faqId="barsha-faq-title"
+      reviews
       faqTitle="Frequently asked questions about movers and packers in Al Barsha"
       faqs={faqs}
       nearby={

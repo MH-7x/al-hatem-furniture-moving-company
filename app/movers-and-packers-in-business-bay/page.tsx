@@ -128,6 +128,7 @@ export default function BusinessBayPage() {
         </>
       }
       faqId="bb-faq-title"
+      reviews
       faqTitle="Frequently asked questions about movers and packers in Business Bay"
       faqs={faqs}
       nearby={

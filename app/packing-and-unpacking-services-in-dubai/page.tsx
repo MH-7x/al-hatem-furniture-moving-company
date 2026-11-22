@@ -463,7 +463,6 @@ export default function PackingPage() {
             </SubHead>
           </>
         }
-        names={["Subha George", "Nazeera Banu Nazar", "Sharath Devadiga"]}
       />
 
       <CardsSection

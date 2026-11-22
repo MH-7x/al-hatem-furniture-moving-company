@@ -1,3 +1,4 @@
+import { REVIEW_COUNT } from "@/lib/constants";
 import Link from "next/link";
 import { ArticleSection, ContactStrip } from "@/components/Article";
 import { Callout, ChipLink } from "@/components/Cards";
@@ -106,6 +107,7 @@ export default function JvcPage() {
         </>
       }
       faqId="jvc-faq-title"
+      reviews
       faqTitle="Frequently asked questions about movers and packers in JVC"
       faqs={faqs}
       nearby={
@@ -588,7 +590,7 @@ export default function JvcPage() {
             licensed and insured, with insurance options discussed during your quotation.
           </li>
           <li>
-            <strong>Reviews:</strong> rated 5.0 out of 5 on Google from 25 reviews, with customers
+            <strong>Reviews:</strong> rated 5.0 out of 5 on Google from {REVIEW_COUNT} reviews, with customers
             praising careful handling and on-time service.
           </li>
         </ul>

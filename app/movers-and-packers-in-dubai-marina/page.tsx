@@ -6,6 +6,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { Section, SectionHeading } from "@/components/Section";
 import { SiteImage } from "@/components/SiteImage";
 import { ArticleSection, ContactStrip } from "@/components/Article";
+import { ReviewsSection } from "@/components/Blocks";
 import { Callout, ChipLink, ChipList } from "@/components/Cards";
 import { Faqs } from "@/components/Faq";
 import { BUSINESS } from "@/lib/constants";
@@ -699,6 +700,8 @@ export default function DubaiMarinaPage() {
           </Callout>
         </div>
       </Section>
+
+      <ReviewsSection id="marina-reviews-title" title="What Our Customers Say" />
 
       <ContactStrip />
       <div className="pb-8" />

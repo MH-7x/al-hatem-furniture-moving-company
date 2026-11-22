@@ -668,7 +668,6 @@ export default function SharjahPage() {
         id="sh-reviews-title"
         tone="neutral"
         title="What Sharjah Customers Say"
-        names={["Sulthan Abdul Kader", "Subha George"]}
       />
 
       <ArticleSection id="sh-checklist" title="Sharjah Moving Checklist: What to Do Before the Truck Arrives">

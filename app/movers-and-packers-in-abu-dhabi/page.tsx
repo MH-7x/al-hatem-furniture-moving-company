@@ -1,3 +1,4 @@
+import { ReviewsSection } from "@/components/Blocks";
 import Link from "next/link";
 import { ArticleSection, ContactStrip } from "@/components/Article";
 import { Callout, ChipLink } from "@/components/Cards";
@@ -113,23 +114,26 @@ export default function AbuDhabiPage() {
         </>
       }
       after={
-        <FinalCta id="ad-final-title" title="Get a Free Moving Quote Today">
-          <p>
-            Planning a move in Abu Dhabi doesn’t have to be stressful. Whether you’re relocating your
-            home, apartment, villa, office, or furniture, Al Hatem Movers is here to make the process
-            simple from start to finish.
-          </p>
-          <p>
-            Our experienced team takes care of packing, transportation, unloading, and furniture setup,
-            allowing you to focus on settling into your new space. Every move is planned carefully to
-            ensure your belongings arrive safely and on time.
-          </p>
-          <p>
-            If you’re looking for dependable <strong>packers movers abu dhabi</strong>, contact Al Hatem
-            Movers today. We’ll provide a free quotation and help you choose the moving service that
-            best fits your requirements.
-          </p>
-        </FinalCta>
+        <>
+          <ReviewsSection id="ad-reviews-title" title="What Our Customers Say" />
+          <FinalCta id="ad-final-title" title="Get a Free Moving Quote Today">
+            <p>
+              Planning a move in Abu Dhabi doesn’t have to be stressful. Whether you’re relocating your
+              home, apartment, villa, office, or furniture, Al Hatem Movers is here to make the process
+              simple from start to finish.
+            </p>
+            <p>
+              Our experienced team takes care of packing, transportation, unloading, and furniture setup,
+              allowing you to focus on settling into your new space. Every move is planned carefully to
+              ensure your belongings arrive safely and on time.
+            </p>
+            <p>
+              If you’re looking for dependable <strong>packers movers abu dhabi</strong>, contact Al Hatem
+              Movers today. We’ll provide a free quotation and help you choose the moving service that
+              best fits your requirements.
+            </p>
+          </FinalCta>
+        </>
       }
     >
       <ArticleSection

@@ -2,6 +2,12 @@ export const SITE_URL = (
   process.env.SITE_URL ?? "http://localhost:3000"
 ).replace(/\/+$/, "");
 
+/** Google review count. Set REVIEW_COUNT in the environment and redeploy to change it. */
+export const REVIEW_COUNT = (() => {
+  const n = Number.parseInt(process.env.REVIEW_COUNT ?? "", 10);
+  return Number.isFinite(n) && n > 0 ? n : 26;
+})();
+
 export const BUSINESS = {
   name: "Al Hatem Furniture Moving Company",
   arabicName: "شركة الحاتم لنقل اثاث",

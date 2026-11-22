@@ -401,7 +401,6 @@ export default function ApartmentMoversPage() {
             </SubHead>
           </>
         }
-        names={["Youssef Shalaby", "Ali Al Raeisi", "Nazeera Banu Nazar"]}
       />
 
       <CardsSection

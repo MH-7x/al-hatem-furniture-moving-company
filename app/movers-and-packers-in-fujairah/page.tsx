@@ -657,7 +657,6 @@ export default function FujairahPage() {
         id="fuj-reviews-title"
         tone="neutral"
         title="What Fujairah Customers Say"
-        names={["Uzair Akhoond", "Ali Al Raeisi"]}
       />
     </LocationLayout>
   );

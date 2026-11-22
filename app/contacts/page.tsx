@@ -1,3 +1,4 @@
+import { ReviewsSection } from "@/components/Blocks";
 import Link from "next/link";
 import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { Shell } from "@/components/Shell";
@@ -358,6 +359,8 @@ export default function ContactsPage() {
           <MapBlock />
         </div>
       </Section>
+
+      <ReviewsSection id="contacts-reviews-title" title="What Our Customers Say" />
 
       <FinalCta id="contacts-final-title" title="Ready to Plan Your Move?">
         <p>

@@ -331,7 +331,6 @@ export default function StoragePage() {
             </SubHead>
           </>
         }
-        names={["Ali Al Raeisi", "Nazeera Banu Nazar", "Uzair Akhoond"]}
       />
 
       <CardsSection

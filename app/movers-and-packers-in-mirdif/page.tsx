@@ -103,6 +103,7 @@ export default function MirdifPage() {
         </>
       }
       faqId="mirdif-faq-title"
+      reviews
       faqTitle="Frequently asked questions about movers and packers in Mirdif"
       faqs={faqs}
       nearby={
