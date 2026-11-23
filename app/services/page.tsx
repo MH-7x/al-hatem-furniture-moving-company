@@ -82,8 +82,9 @@ export default function ServicesPage() {
           Dubai and the UAE.
         </p>
         <p>
-          With over 12 years of experience and more than 12,000 successful moves, we help families
-          and businesses move safely, efficiently, and with minimal stress.
+          We have been moving families and businesses across Dubai since 2014 and have completed
+          over 12,000 jobs. Every move is planned around the property, the date and the items going
+          into the truck.
         </p>
         <div className="pt-2">
           <OpenCallBox tone="light" />
@@ -93,14 +94,14 @@ export default function ServicesPage() {
       <Section labelledBy="services-trust-title">
         <SectionHeading id="services-trust-title" title="Why Customers Trust Al Hatem Movers" />
         <ul className="check-list grid gap-x-8 gap-y-4 font-semibold text-black md:grid-cols-2">
-          <li>12+ Years of Professional Moving Experience (Since 2014)</li>
-          <li>12,000+ Successful Relocations Completed</li>
-          <li>Fully Licensed & Insured Services</li>
-          <li>Expert Teams for Residential & Commercial Moves</li>
-          <li>Transparent Pricing with No Hidden Fees</li>
-          <li>Flexible Scheduling Including Same-Day Options</li>
-          <li>Comprehensive Services Under One Roof</li>
-          <li>Dedicated Support Before, During & After Your Move</li>
+          <li>In business since 2014, with 12+ years of professional moving experience</li>
+          <li>More than 12,000 relocations completed</li>
+          <li>Licensed and insured</li>
+          <li>Teams experienced in both residential and commercial moves</li>
+          <li>Quotes with no hidden fees</li>
+          <li>Flexible dates, including same-day moves where available</li>
+          <li>Moving, packing, storage and cargo handled by one company</li>
+          <li>Support before, during and after your move</li>
         </ul>
       </Section>
 
@@ -129,7 +130,7 @@ export default function ServicesPage() {
             <p>
               Our home moving service is designed for complete household relocations, helping
               families move their belongings to a new property with less stress and fewer
-              disruptions
+              disruptions.
             </p>
           </ImageCard>
           <ImageCard
@@ -266,20 +267,33 @@ export default function ServicesPage() {
       <Section tone="neutral" labelledBy="services-areas-title">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
           <div className="self-start rounded-card bg-white p-6 shadow-[0_20px_50px_-25px_rgb(0_0_0/0.25)] lg:p-8">
-            <p className="mb-5 text-xl font-bold text-black">Get a free moving quote</p>
+            <p className="mb-5 text-xl font-bold text-black">
+              Not sure which service you need? Describe the job in the form below and we will tell
+              you what fits.
+            </p>
             <QuoteForm idPrefix="services" />
           </div>
           <div>
             <h2 id="services-areas-title">Areas We Serve Across the UAE</h2>
             <div className="rich mt-5">
-              <p>Al Hatem Movers proudly serves customers throughout:</p>
-              <p className="text-xl font-bold leading-snug text-black">
-                Dubai. Abu Dhabi. Sharjah. Ajman. Al Ain. Ras Al Khaimah. Fujairah. Umm Al Quwain.
-              </p>
               <p>
-                Whether you’re moving locally or relocating to another emirate, our team can help
-                with a solution that fits your needs.
+                Our base is Dubai. We also move customers to, from and between the other emirates:
               </p>
+              <ul className="text-xl font-bold leading-snug text-black">
+                <li>
+                  <Link href="/movers-and-packers-in-abu-dhabi/">Abu Dhabi</Link> and{" "}
+                  <Link href="/movers-and-packers-in-al-ain/">Al Ain</Link>
+                </li>
+                <li>
+                  <Link href="/movers-and-packers-in-sharjah/">Sharjah</Link> and{" "}
+                  <Link href="/movers-and-packers-in-ajman/">Ajman</Link>
+                </li>
+                <li>
+                  <Link href="/movers-and-packers-in-fujairah/">Fujairah</Link>,{" "}
+                  <Link href="/movers-and-packers-in-ras-al-khaimah/">Ras Al Khaimah</Link> and Umm
+                  Al Quwain
+                </li>
+              </ul>
             </div>
             <div className="mt-8">
               <OpenCallBox tone="light" />
@@ -290,7 +304,18 @@ export default function ServicesPage() {
 
       <ReviewsSection id="services-reviews-title" title="What Our Customers Say" />
 
-      <FinalCta id="services-final-title" title="Get Your Free Moving Quote Today">
+      <FinalCta
+        id="services-final-title"
+        title="Get Your Free Moving Quote Today"
+        boxTitle="Ready to Book? Reach Us Your Way"
+        actions={[
+          { kind: "quote", label: "Get a free quote on WhatsApp" },
+          { kind: "call", label: "Call us now" },
+          { kind: "whatsapp", label: "Chat with our team" },
+          { kind: "email", label: "Send your requirements by email" },
+        ]}
+        footnote="Based in Dubai, covering every emirate"
+      >
         <p>Looking for reliable movers in Dubai?</p>
         <p>
           Whether you need home movers, apartment movers, villa movers, office movers, furniture
@@ -300,9 +325,7 @@ export default function ServicesPage() {
           <Link href="/contacts/">Contact our team</Link> today to discuss your requirements and
           receive a personalized moving quotation.
         </p>
-        <p>
-          Let Al Hatem Movers help make your next move simple, organized, and stress-free.
-        </p>
+        <p>Tell us what needs to move and where it is going, and we will take it from there.</p>
       </FinalCta>
     </Shell>
   );

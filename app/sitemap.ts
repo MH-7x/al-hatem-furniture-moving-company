@@ -18,7 +18,7 @@ const PAGES: Record<string, PageMeta> = {
     image: "/images/home/al-hatem-movers-dubai-villa-move.webp",
   },
   "/services/": {
-    lastModified: "2026-11-22",
+    lastModified: "2026-11-24",
     image: "/images/services/moving-and-packing-services-dubai.webp",
   },
   "/areas-we-serve/": {
@@ -26,11 +26,11 @@ const PAGES: Record<string, PageMeta> = {
     image: "/images/global/uae-moving-service-coverage.webp",
   },
   "/about/": {
-    lastModified: "2026-11-22",
+    lastModified: "2026-11-24",
     image: "/images/global/al-hatem-movers-team-and-truck-uae.webp",
   },
   "/contacts/": {
-    lastModified: "2026-11-22",
+    lastModified: "2026-11-24",
     image: "/images/global/al-hatem-movers-team-and-truck-uae.webp",
   },
   "/privacy-policy/": {

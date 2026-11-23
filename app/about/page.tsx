@@ -58,29 +58,28 @@ export default function AboutPage() {
         }
       >
         <p>
-          For over 12 years, Al Hatem Movers has been helping families and
-          businesses relocate across Dubai and the UAE. What began as a local
-          moving service has grown into a trusted company serving homeowners,
-          tenants, and commercial clients throughout the region.
+          For over 12 years, <Link href="/">Al Hatem Movers</Link> (Al Hatem
+          Furniture Moving Company) has been helping families and businesses
+          relocate across Dubai and the UAE. What began as a local moving
+          service has grown into a trusted company serving homeowners, tenants,
+          and commercial clients throughout the region.
         </p>
         <p>
           With more than 12,000 successful moves completed, we provide
-          residential moving, office relocation, packing, storage, and cargo
+          residential moving, office relocation, packing,{" "}
+          <Link href="/storage-solutions-in-dubai/">storage</Link>, and cargo
           services designed to make moving simpler and more organized.
         </p>
       </PageHeader>
 
       <Section labelledBy="about-trust-title" tight>
-        <SectionHeading
-          id="about-trust-title"
-          title="Trusted by Customers Across the UAE"
-        />
+        <SectionHeading id="about-trust-title" title="Our Track Record" />
         <ul className="check-list grid gap-x-8 gap-y-4 font-semibold text-black md:grid-cols-2 lg:grid-cols-3">
-          <li>12+ Years of Industry Experience (Since 2014)</li>
-          <li>12,000+ Successful Moves Completed</li>
-          <li>Licensed & Insured Moving Services</li>
-          <li>Residential & Commercial Relocation Experts</li>
-          <li>Serving Dubai and Major UAE Cities</li>
+          <li>Operating since 2014, with more than 12 years in the business</li>
+          <li>12,000+ completed moves</li>
+          <li>Licensed and insured</li>
+          <li>Experienced with both homes and businesses</li>
+          <li>Customers across Dubai and the wider UAE</li>
         </ul>
       </Section>
 
@@ -96,7 +95,7 @@ export default function AboutPage() {
                 <Link href="/">Al Hatem Movers</Link> is a Dubai-based moving
                 and logistics company serving customers across the UAE. We help
                 individuals, families, and businesses relocate safely with
-                practical moving solutions tailored to their requirements
+                practical moving solutions tailored to their requirements.
               </p>
               <p>
                 From small apartment moves to large office relocations, our team
@@ -286,10 +285,7 @@ export default function AboutPage() {
           }
         />
         <CardGrid cols={3}>
-          <FeatureCard
-            title="12+ Years of Industry Experience (Since 2014)"
-            className="bg-neutral"
-          >
+          <FeatureCard title="Experience Since 2014" className="bg-neutral">
             <p>
               With over a decade of experience, we understand the planning and
               coordination required for successful residential and commercial
@@ -344,8 +340,8 @@ export default function AboutPage() {
             <h2 id="about-cities-title">Serving Dubai and Major UAE Cities</h2>
             <div className="rich mt-5">
               <p>
-                Al Hatem Movers proudly serves customers throughout Dubai and
-                other major cities across the UAE.
+                Dubai is where we are based. We also handle moves in and out of
+                these cities:
               </p>
               <p className="text-xl font-bold leading-snug">
                 <Link href="/areas-we-serve/">Dubai</Link>.{" "}
@@ -360,14 +356,15 @@ export default function AboutPage() {
                 Umm Al Quwain.
               </p>
               <p>
-                Whether you’re moving locally or relocating between cities, our
-                team is ready to help.
+                Whether the move is across town or across emirates, we can help
+                you plan it.
               </p>
             </div>
           </div>
           <div className="self-start rounded-card bg-white p-6 shadow-[0_20px_50px_-25px_rgb(0_0_0/0.25)] lg:p-8">
             <p className="mb-5 text-xl font-bold text-black">
-              Get a free moving quote
+              Have a move in mind? Fill in the form and a member of our team
+              will get back to you.
             </p>
             <QuoteForm idPrefix="about" />
           </div>
@@ -383,9 +380,9 @@ export default function AboutPage() {
             </h2>
             <div className="rich mt-5">
               <p>
-                Our team is trained to handle furniture, appliances, office
-                equipment, and fragile items using safe and organized moving
-                practices.
+                On moving day, the crew does the hands-on work: wrapping
+                furniture, protecting appliances, boxing fragile items and
+                loading the truck in an order that makes unloading easier.
               </p>
               <p>
                 From packing and loading to transportation, unloading, and
@@ -502,15 +499,22 @@ export default function AboutPage() {
 
       <ReviewsSection id="about-reviews-title" title="What Our Customers Say" />
 
-      <FinalCta id="about-final-title" title="Get in Touch With Our Team">
+      <FinalCta
+        id="about-final-title"
+        title="Get in Touch With Our Team"
+        boxTitle="Talk to Al Hatem Movers"
+        actions={[
+          { kind: "quote", label: "Ask for a free quote" },
+          { kind: "call", label: "Call us to talk it through" },
+          { kind: "whatsapp", label: "Message us on WhatsApp" },
+        ]}
+        footnote="Based in Dubai, serving the UAE"
+      >
         <p>
-          Planning a move or looking for storage or cargo services? Our team is
-          here to help.
+          Planning a move, or need storage or cargo help? Send us the details
+          and we will reply with a quote.
         </p>
-        <p>
-          Let Al Hatem Movers help make your next move simple, organized, and
-          stress-free.
-        </p>
+        <p>Whatever you are moving, we will help you plan it properly.</p>
       </FinalCta>
     </Shell>
   );

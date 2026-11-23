@@ -96,14 +96,14 @@ export default function ContactsPage() {
       </PageHeader>
 
       <Section labelledBy="contacts-trust-title" tight>
-        <SectionHeading id="contacts-trust-title" title="Trusted by Customers Across the UAE" />
+        <SectionHeading id="contacts-trust-title" title="What to Expect When You Contact Us" />
         <ul className="check-list grid gap-x-8 gap-y-4 font-semibold text-black md:grid-cols-2 lg:grid-cols-3">
-          <li>12+ Years of Industry Experience (Since 2014)</li>
-          <li>12,000+ Successful Moves Completed</li>
-          <li>Licensed & Insured Moving Services | Trade Licence Available on Request</li>
-          <li>Residential & Commercial Relocation Experts</li>
-          <li>Serving Dubai and Major UAE Cities</li>
-          <li>Same-Day Moving Available</li>
+          <li>Free quotes with no obligation</li>
+          <li>Same-day moves where availability allows</li>
+          <li>Site surveys for larger home and office relocations</li>
+          <li>Licensed and insured, with the trade licence available on request</li>
+          <li>Open 24 hours, Monday to Sunday</li>
+          <li>12,000+ moves completed since we started in 2014</li>
         </ul>
       </Section>
 
@@ -114,8 +114,7 @@ export default function ContactsPage() {
             <div className="rich mt-5">
               <p>
                 Every move is different. Share your requirements with our team and receive a
-                customized quote based on your pickup and drop-off locations, property type, and
-                service needs.
+                customized quote based on your property type, moving date, and service needs.
               </p>
               <Callout>
                 <p>
@@ -231,63 +230,63 @@ export default function ContactsPage() {
           <ServiceCard
             title="Home Moving"
             href="/home-movers-and-packers-in-dubai/"
-            linkText="Read More: Home Moving"
+            linkText="See home moving details"
           >
-            <p>Professional relocation services for houses, townhouses, and family homes</p>
+            <p>Professional relocation services for houses, townhouses, and family homes.</p>
           </ServiceCard>
           <ServiceCard
             title="Apartment Moving"
             href="/apartment-movers-in-dubai/"
-            linkText="Read More: Apartment Moving"
+            linkText="See apartment moving details"
           >
             <p>Safe apartment moving services with packing, transportation, and furniture setup.</p>
           </ServiceCard>
           <ServiceCard
             title="Villa Relocation"
             href="/villa-movers-in-dubai/"
-            linkText="Read More: Villa Relocation"
+            linkText="See villa relocation details"
           >
             <p>Complete villa moving solutions for larger residential properties.</p>
           </ServiceCard>
           <ServiceCard
             title="Office Relocation"
             href="/office-movers-in-dubai/"
-            linkText="Read More: Office Relocation"
+            linkText="See office relocation details"
           >
             <p>Efficient office and commercial moving services designed to minimize downtime.</p>
           </ServiceCard>
           <ServiceCard
             title="Furniture Moving"
             href="/furniture-movers-in-dubai/"
-            linkText="Read More: Furniture Moving"
+            linkText="See furniture moving details"
           >
             <p>Careful transportation, dismantling, and reassembly of furniture.</p>
           </ServiceCard>
           <ServiceCard
             title="Packing & Unpacking Services"
             href="/packing-and-unpacking-services-in-dubai/"
-            linkText="Read More: Packing & Unpacking Services"
+            linkText="See packing and unpacking details"
           >
             <p>Professional packing solutions using quality materials for added protection.</p>
           </ServiceCard>
           <ServiceCard
             title="Storage Solutions"
             href="/storage-solutions-in-dubai/"
-            linkText="Read More: Storage Solutions"
+            linkText="See storage details"
           >
             <p>Secure short-term and long-term storage options for homes and businesses.</p>
           </ServiceCard>
           <ServiceCard
             title="Cargo Services"
             href="/cargo-services-in-dubai/"
-            linkText="Read More: Cargo Services"
+            linkText="See cargo details"
           >
             <p>Reliable cargo transportation and logistics support across the UAE.</p>
           </ServiceCard>
         </CardGrid>
         <div className="mt-10 text-center">
           <Button href={quote} size="lg">
-            Schedule Your Move Today
+            Check Available Moving Slots
           </Button>
         </div>
       </Section>
@@ -295,17 +294,20 @@ export default function ContactsPage() {
       <Section labelledBy="contacts-areas-title">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
           <div>
-            <h2 id="contacts-areas-title">Areas We Serve Across the UAE</h2>
+            <h2 id="contacts-areas-title">Where Our Crews Work</h2>
             <div className="rich mt-5">
               <p>
-                Our team proudly serves customers throughout Dubai and major cities across the UAE.
-              </p>
-              <p className="text-xl font-bold leading-snug text-black">
-                Dubai. Abu Dhabi. Ajman. Al Ain. Sharjah. Ras Al Khaimah. Fujairah. Umm Al Quwain.
+                Our office is on Palm Jumeirah. Besides moves within Dubai, we cover{" "}
+                <Link href="/movers-and-packers-in-abu-dhabi/">Abu Dhabi</Link>,{" "}
+                <Link href="/movers-and-packers-in-al-ain/">Al Ain</Link>,{" "}
+                <Link href="/movers-and-packers-in-sharjah/">Sharjah</Link>,{" "}
+                <Link href="/movers-and-packers-in-ajman/">Ajman</Link>, Umm Al Quwain,{" "}
+                <Link href="/movers-and-packers-in-ras-al-khaimah/">Ras Al Khaimah</Link> and{" "}
+                <Link href="/movers-and-packers-in-fujairah/">Fujairah</Link>.
               </p>
               <p>
-                Whether you’re moving within the same city or relocating to another emirate, our
-                team is ready to assist.
+                Moving to or from another emirate? Add both addresses to your message so the quote
+                covers the whole trip.
               </p>
             </div>
           </div>
@@ -362,13 +364,24 @@ export default function ContactsPage() {
 
       <ReviewsSection id="contacts-reviews-title" title="What Our Customers Say" />
 
-      <FinalCta id="contacts-final-title" title="Ready to Plan Your Move?">
+      <FinalCta
+        id="contacts-final-title"
+        title="Send Us Your Moving Details"
+        boxTitle="Reach Us Now"
+        actions={[
+          { kind: "quote", label: "Get your free quote" },
+          { kind: "call", label: "Call us" },
+          { kind: "whatsapp", label: "Send photos on WhatsApp" },
+          { kind: "email", label: "Write to us by email" },
+        ]}
+        footnote="Office on Palm Jumeirah, serving the whole UAE"
+      >
         <p>
-          Whether you’re moving a home, apartment, villa, office, or commercial property, our team
-          is ready to help.
+          Home, apartment, villa, office or commercial space: the quickest route to a quote is a
+          call or WhatsApp message with your addresses, your preferred date and a list of what
+          needs to move.
         </p>
-        <p>Contact Al Hatem Movers today for a free quote and personalized moving assistance.</p>
-        <p>Let Al Hatem Movers help make your next move simple, organized, and stress-free.</p>
+        <p>Share the details and we will put your quote together.</p>
       </FinalCta>
     </Shell>
   );
